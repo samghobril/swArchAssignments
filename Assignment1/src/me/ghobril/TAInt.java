@@ -9,6 +9,10 @@ public class TAInt extends TAPrimitive{
 
     }
 
+    public TAInt(String n) {
+        super(n);
+    }
+
     public int compare(TAPrimitive b) {
         if(b.getClass() == getClass()) {
             TAInt toCompare = (TAInt)b;
@@ -18,5 +22,12 @@ public class TAInt extends TAPrimitive{
         else {
             return -9999;
         }
+    }
+
+    public void set(int state) {
+        data = state;
+    }
+    public void printState() {
+        System.out.print(data);
     }
 }

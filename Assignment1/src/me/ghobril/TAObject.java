@@ -5,4 +5,6 @@ package me.ghobril;
  */
 abstract public class TAObject {
     abstract public TAPrimitive getData();
+    abstract public void list();
+    abstract public void evaluate();
 }

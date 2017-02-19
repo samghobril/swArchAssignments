@@ -9,6 +9,10 @@ public class TADouble extends TAPrimitive {
 
     }
 
+    public TADouble(String n) {
+        super(n);
+    }
+
     public int compare(TAPrimitive b) {
         if(b.getClass() == getClass()) {
             TADouble toCompare = (TADouble)b;
@@ -18,6 +22,14 @@ public class TADouble extends TAPrimitive {
         else {
             return -9999;
         }
+    }
+
+    public void set(double state) {
+        data = state;
+    }
+
+    public void printState() {
+        System.out.print(data);
     }
 
 
